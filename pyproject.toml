@@ -1,0 +1,19 @@
+[project]
+name = "mojo-libffi"
+version = "0.1.0"
+description = "Mojo with libffi."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mojo",
+]
+
+[[tool.uv.index]]
+name = "modular"
+url = "https://dl.modular.com/public/nightly/python/simple/"
+
+[tool.uv.sources]
+mojo = { index = "modular" }
+
+[tool.uv]
+prerelease = "allow"
